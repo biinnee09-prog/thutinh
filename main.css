@@ -610,32 +610,6 @@ html, body {
         top: 50%;
     }
 }/* Fix lỗi chữ to trên điện thoại */
-@media (max-width: 600px) {
-    /* Điều chỉnh kích thước chữ to ở tiêu đề ("Chào mừng") */
-    .boxTitle { 
-        font-size: 20px !important; 
-    }
-    
-    /* THÊM MỘT CLASS TIỀM NĂNG KHÁC (nếu có) */
-    .title-text { 
-        font-size: 20px !important; 
-    }
-
-    /* Điều chỉnh kích thước chữ ở nút ("Chạm vào đây") */
-    .openBtn { 
-        font-size: 14px !important; 
-        padding: 10px 15px !important; 
-    
-
-    }
-}* giảm font siza lần 2
-
-}* fix chữ to lần 3: sâu hơn nữa
-
-}/* Fix lỗi chữ to trên điện thoại */
-@media (max-width: 600px) {
-    /* Điều chỉnh kích thước chữ to ở tiêu đề ("Chào mừng") - (ĐÃ ỔN) */
-    .boxTitle { 
         font-size: 20px !important; 
     }
     
