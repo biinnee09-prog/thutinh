@@ -609,4 +609,16 @@ html, body {
     100% {
         top: 50%;
     }
+}/* Fix lỗi chữ to trên điện thoại */
+@media (max-width: 600px) {
+    /* Điều chỉnh kích thước chữ to ở tiêu đề ("Chào mừng") */
+    .boxTitle { 
+        font-size: 50px !important; 
+    }
+
+    /* Điều chỉnh kích thước chữ ở nút ("Chạm vào đây") */
+    .openBtn { 
+        font-size: 24px !important; 
+        padding: 10px 20px !important; 
+    }
 }
