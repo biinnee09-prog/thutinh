@@ -613,12 +613,22 @@ html, body {
 @media (max-width: 600px) {
     /* Điều chỉnh kích thước chữ to ở tiêu đề ("Chào mừng") */
     .boxTitle { 
-        font-size: 30px !important; 
+        font-size: 20px !important; 
+    }
+    
+    /* THÊM MỘT CLASS TIỀM NĂNG KHÁC (nếu có) */
+    .title-text { 
+        font-size: 20px !important; 
     }
 
     /* Điều chỉnh kích thước chữ ở nút ("Chạm vào đây") */
     .openBtn { 
-        font-size: 16px !important; 
-        padding: 10px 20px !important; 
+        font-size: 14px !important; 
+        padding: 10px 15px !important; 
+    }
+}
+
     }
 }* giảm font siza lần 2
+
+}* fix chữ to lần 3: sâu hơn nữa
