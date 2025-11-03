@@ -608,9 +608,28 @@ html, body {
 
     100% {
         top: 50%;
+    }* /* Đảm bảo CSS cho mobile được áp dụng - Tăng độ mạnh selector */
+@media (max-width: 600px) {
+    /* CHỮ LỚN TRANG ĐẦU ("Chào mừng") */
+    /* Thử selector mạnh nhất: Áp dụng cho boxTitle, title-text */
+    #main-container .boxTitle, #main-container .title-text, .title-text { 
+        font-size: 18px !important; 
     }
-}/* Fix lỗi chữ to trên điện thoại */
-        font-size: 20px !important; 
+
+    /* CHỮ NÚT TRANG ĐẦU ("Chạm vào đây") */
+    .openBtn { 
+        font-size: 12px !important; 
+        padding: 10px 15px !important; 
+    }
+    
+    /* CHỮ BÊN TRONG THIỆP ("Hehehe lại là tôi...") */
+    .letterContent, .letterContent p { 
+        font-size: 16px !important; 
+        line-height: 1.5 !important;
+    }
+}
+
+        font-size: 20px !important
     }
     
     /* THÊM CODE MỚI VÀO ĐÂY: Chỉnh kích thước chữ trong thiệp */
@@ -624,4 +643,4 @@ html, body {
         font-size: 12px !important; 
         padding: 10px 15px !important; 
     }
-}* fix chữ nội dung thiệp trên mobile
+}* final fix chữ to trang đầu
