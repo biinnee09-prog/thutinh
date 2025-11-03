@@ -608,12 +608,13 @@ html, body {
 
     100% {
         top: 50%;
-    }* /* Đảm bảo CSS cho mobile được áp dụng - Tăng độ mạnh selector */
-@media (max-width: 600px) {
-    /* CHỮ LỚN TRANG ĐẦU ("Chào mừng") */
-    /* Thử selector mạnh nhất: Áp dụng cho boxTitle, title-text */
-    #main-container .boxTitle, #main-container .title-text, .title-text { 
-        font-size: 18px !important; 
+    }* /* BẮT BUỘC FIX LỖI CHỮ TO TRANG ĐẦU */
+@media screen and (max-width: 600px) {
+    /* Sử dụng tổ hợp selector mạnh nhất để ghi đè mọi thứ */
+    body .container .boxTitle .title-text,
+    body .container .boxTitle p.title-text { 
+        font-size: 16px !important; /* Đã giảm xuống 16px */
+        line-height: 1.2 !important; 
     }
 
     /* CHỮ NÚT TRANG ĐẦU ("Chạm vào đây") */
@@ -627,19 +628,5 @@ html, body {
         font-size: 16px !important; 
         line-height: 1.5 !important;
     }
-}
-    }
-    
-    /* THÊM CODE MỚI VÀO ĐÂY: Chỉnh kích thước chữ trong thiệp */
-    .letterContent p { /* Áp dụng cho đoạn văn bản bên trong thiệp */
-        font-size: 14px !important; /* Thử 14px cho chữ vừa phải */
-        line-height: 1.5; /* Giúp các dòng không bị dính vào nhau */
-    }
+}* final-final fix: Tăng độ mạnh selector để fix lỗi chữ to
 
-    /* Điều chỉnh kích thước chữ ở nút ("Chạm vào đây") - (ĐÃ CHỈNH LẠI) */
-    .openBtn { 
-        font-size: 12px !important; 
-        padding: 10px 15px !important; 
-    }
-}* final fix chữ to trang đầu
-}* xóa lỗi cú pháp và code lặp lại
