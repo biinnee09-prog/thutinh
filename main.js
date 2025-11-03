@@ -41,4 +41,22 @@ cardValentine.addEventListener("click", () => {
             document.querySelector(".letterContent").innerHTML = ""
         }, 1000)
     }
-})
+})// FUNCTION MỚI: Chỉ áp dụng style khi là màn hình điện thoại
+function applyMobileStyle() {
+    // Kiểm tra chiều rộng màn hình (nếu nhỏ hơn hoặc bằng 600px là điện thoại)
+    if (window.innerWidth <= 600) { 
+        var letterContent = document.querySelector(".letterContent");
+        
+        // **Giảm kích thước chữ trong thiệp trực tiếp bằng JS**
+        // Đặt font-size nhỏ hơn (16px) và line-height
+        letterContent.style.fontSize = "16px"; 
+        letterContent.style.lineHeight = "1.5";
+    }
+}
+
+// Gọi hàm này khi trang đã tải xong
+applyMobileStyle(); 
+// Gọi hàm này sau khi mở thiệp (để chắc chắn style được áp dụng)
+document.addEventListener("DOMContentLoaded", applyMobileStyle); 
+
+} final fix chữ to trong thiệp bằng JS 
