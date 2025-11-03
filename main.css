@@ -608,7 +608,7 @@ html, body {
 
     100% {
         top: 50%;
-    }* /* BẮT BUỘC FIX LỖI CHỮ TO TRANG ĐẦU */
+    }* BẮT BUỘC FIX LỖI CHỮ TO TRANG ĐẦU */
 @media screen and (max-width: 600px) {
     /* Sử dụng tổ hợp selector mạnh nhất để ghi đè mọi thứ */
     body .container .boxTitle .title-text,
@@ -628,5 +628,5 @@ html, body {
         font-size: 16px !important; 
         line-height: 1.5 !important;
     }
-}* final-final fix: Tăng độ mạnh selector để fix lỗi chữ to
-
+}
+final-final fix: xóa code lỗi và dán code mạnh nhất
