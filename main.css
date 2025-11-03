@@ -625,10 +625,29 @@ html, body {
     .openBtn { 
         font-size: 14px !important; 
         padding: 10px 15px !important; 
-    }
-}
+    
 
     }
 }* giảm font siza lần 2
 
 }* fix chữ to lần 3: sâu hơn nữa
+
+}/* Fix lỗi chữ to trên điện thoại */
+@media (max-width: 600px) {
+    /* Điều chỉnh kích thước chữ to ở tiêu đề ("Chào mừng") - (ĐÃ ỔN) */
+    .boxTitle { 
+        font-size: 20px !important; 
+    }
+    
+    /* THÊM CODE MỚI VÀO ĐÂY: Chỉnh kích thước chữ trong thiệp */
+    .letterContent p { /* Áp dụng cho đoạn văn bản bên trong thiệp */
+        font-size: 14px !important; /* Thử 14px cho chữ vừa phải */
+        line-height: 1.5; /* Giúp các dòng không bị dính vào nhau */
+    }
+
+    /* Điều chỉnh kích thước chữ ở nút ("Chạm vào đây") - (ĐÃ CHỈNH LẠI) */
+    .openBtn { 
+        font-size: 12px !important; 
+        padding: 10px 15px !important; 
+    }
+}* fix chữ nội dung thiệp trên mobile
