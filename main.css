@@ -628,8 +628,6 @@ html, body {
         line-height: 1.5 !important;
     }
 }
-
-        font-size: 20px !important
     }
     
     /* THÊM CODE MỚI VÀO ĐÂY: Chỉnh kích thước chữ trong thiệp */
@@ -644,3 +642,4 @@ html, body {
         padding: 10px 15px !important; 
     }
 }* final fix chữ to trang đầu
+}* xóa lỗi cú pháp và code lặp lại
